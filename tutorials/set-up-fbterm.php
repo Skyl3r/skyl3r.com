@@ -14,15 +14,19 @@
 			<li>frame buffer device or VESA video card</li>
 		</ul> 
 
-		<h4>Step 1.</h4>
+		<h4>Step 1. Build FBTerm</h4>
 		<p>If you already have FBTerm installed, remove it. We will need to compile it from source so that we can get commit 71a7a79 which makes the color palette non-constant as well as a build fix and insert-mode fix from ccapitalK.</p>
 		<p>git clone https://github.com/ccapitalK/fbterm</p>
 		<p>FBTerm build needs a compiler. I recommended getting cmake and g++ which is in most repos.</p>
 		<p>sudo apt-get install cmake g++ -y</p>		
-		<p>You need pkg-config, libfreetype6-dev, libfontconfig1-dev, libx86-dev and optionally libgpm-dev for mouse support</p>  
+		<p>You need additional libraries and config tools: pkg-config, libfreetype6-dev, libfontconfig1-dev, libx86-dev and optionally libgpm-dev for mouse support</p>  
 		<p>sudo apt-get install pkg-config libfreetype6-dev libfontconfig1-dev libx86-dev libgpm-dev -y</p>
 		<p>Now you can run the ./configure</p>
 		<p>./configure</p>	
+		<p>Now build the source with make</p>
+		<p>make</p>
+		<p>If all went well you can now install</p>
+		<p>sudo make install</p>
 
 	</body>
 
