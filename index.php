@@ -3,6 +3,7 @@
 <html>
 
 	<head>
+		<meta name="viewport" content="width=device-width, inital-scale=1">
 		<title>Skyl3r</title>
 		<link rel="stylesheet" href="main.css">
 	</head>
